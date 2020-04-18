@@ -7,5 +7,8 @@ https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole
 The collection function is code in "extract_data.py".
 The funciton is called hourly in "main_extract.py"
 
-The raw data is saved in "all_data.csv"
+The separated raw data file are in "Extracts folder"
+
+The concatenated raw data is saved in "all_data.csv"
+
 
