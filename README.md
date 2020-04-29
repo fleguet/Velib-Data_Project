@@ -9,6 +9,6 @@ The funciton is called hourly in "main_extract.py"
 
 The separated raw data file are in "Extracts folder"
 
-The concatenated raw data is saved in "all_data.csv"
+The concatenated raw data is saved in "allData.csv"
 
 
