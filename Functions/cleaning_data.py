@@ -10,8 +10,8 @@ def cleaning( file_name ):
     '''
     file_name (string) : name or path of the file 
     Takes the conacatenated CSV file entry and drops duplicated rows and columns
-    Creates the new CSV file
-    Returns the cleaaned dataframe
+    Creates the new CSV file at the parent directory
+    Returns the cleaned dataframe
     '''
     import pandas as pd
     # Import of the data 
@@ -31,7 +31,8 @@ def cleaning( file_name ):
     #Dropping of the duplicated columns 
     df.drop( columns= ['numBikesAvailable', 'numDocksAvailable',  'stationCode_y'], inplace= True  )
     
-    #Creating the new file with cleaned data
-    df.to_csv('cleanedData.csv')
+    #Creating the new file with cleaned data at parent directory
+    import pathlib
+    df.to_csv( str( pathlib.Path.cwd().parent) + '/cleanedData.csv' )
     
     return df 
